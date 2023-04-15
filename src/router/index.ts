@@ -1,3 +1,4 @@
+import administrationRoute from '@/modules/administrators/router'
 import homeRoute from '@/modules/router'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
@@ -6,6 +7,9 @@ const router = createRouter({
   routes: [
     {
       ...homeRoute
+    },
+    {
+      ...administrationRoute
     },
     { path: '/:pathMatch(.*)*', redirect: () => ({ name: 'home' }) }
   ]

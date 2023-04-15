@@ -17,8 +17,10 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
+    "@vueup/vue-quill": "^1.1.1",
     "bootstrap": "^5.2.3",
     "pinia": "^2.0.32",
+    "quill-blot-formatter": "^1.0.5",
     "sass": "^1.62.0",
     "sass-loader": "^13.2.2",
     "vue": "^3.2.47",
