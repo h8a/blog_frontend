@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import VueFeather from 'vue-feather'
 </script>
 
 <template>
@@ -17,9 +17,9 @@
         </div>
         <div class="row">
             <div class="col">
-                <i data-feather="link"></i>
-                <i data-feather="github"></i>
-                <i data-feather="linkedin"></i>
+                <vue-feather type="link"></vue-feather>
+                <vue-feather type="github"></vue-feather>
+                <vue-feather type="linkedin"></vue-feather>
             </div>
         </div>
     </div>

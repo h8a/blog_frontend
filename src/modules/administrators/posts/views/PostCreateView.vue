@@ -3,6 +3,8 @@ import { QuillEditor } from '@vueup/vue-quill'
 import BlotFormatter from 'quill-blot-formatter'
 import '@vueup/vue-quill/dist/vue-quill.snow.css'
 
+import VueFeather from 'vue-feather'
+
 const modules = {
     name: 'blotFormatter',
     module: BlotFormatter,
@@ -28,7 +30,7 @@ const modules = {
                 <label>References</label>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Name reference" aria-label="Name reference">
-                    <span class="input-group-text"><i data-feather="link"></i></span>
+                    <span class="input-group-text"><vue-feather type="link"></vue-feather></span>
                     <input type="text" class="form-control" placeholder="Url" aria-label="Url">
                     <button type="button" class="btn btn-primary">Add</button>
                 </div>
@@ -63,24 +65,9 @@ const modules = {
                     <ol class="list-group list-group-numbered">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
-                            <div class="fw-bold">Subheading</div>
-                            Content for list item
+                                <div class="fw-bold">Image name</div>
                             </div>
-                            <span class="badge bg-primary rounded-pill"><i data-feather="clipboard"></i></span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                            <div class="ms-2 me-auto">
-                            <div class="fw-bold">Subheading</div>
-                            Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill">14</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                            <div class="ms-2 me-auto">
-                            <div class="fw-bold">Subheading</div>
-                            Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill">14</span>
+                            <span class="badge bg-primary rounded-pill"><vue-feather type="clipboard"></vue-feather></span>
                         </li>
                     </ol>
                 </div>
