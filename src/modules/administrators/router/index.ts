@@ -4,6 +4,7 @@ import PostCreateView from '@/modules/administrators/posts/views/PostCreateView.
 import AuthView from '@/modules/administrators/auth/views/AuthView.vue'
 import UsersView from '@/modules/administrators/users/views/UsersView.vue'
 import UserView from '@/modules/administrators/users/views/UserView.vue'
+import AuthUserAdminView from '../auth/views/AuthUserAdminView.vue'
 
 const administrationRoute: RouteRecordRaw = {
     path: '/admin',
@@ -20,6 +21,11 @@ const administrationRoute: RouteRecordRaw = {
             path: '/admin/auth',
             name: 'auth',
             component: AuthView
+        },
+        {
+            path: '/admin/auth-user',
+            name: 'auth',
+            component: AuthUserAdminView
         },
         {
             path: '/admin/users',

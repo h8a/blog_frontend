@@ -2,6 +2,8 @@
 import { RouterView } from 'vue-router'
 import HeaderView from '@/modules/administrators/shared/header/HeaderView.vue'
 
+const authenticated = false;
+
 </script>
 
 <template>
